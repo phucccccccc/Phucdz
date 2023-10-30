@@ -1,0 +1,339 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* ================== Header============ */
+#header{
+    background: #23282d;
+    padding-top: 27px;
+    padding-bottom: 10px;
+    margin-bottom:35px ;
+}
+
+form#search input {
+    background:#131619 ;
+    width: 248ox;
+    border: none;
+    outline: none;
+    padding: 9px 42px 9px 15px;
+
+}
+
+form#search button{
+    position: absolute;
+    right: 170px;
+    background: none;
+    border: none;
+    color: #a2a1a1;
+    padding: 9px 12px;
+}
+
+form#search ::placeholder{
+    color: #909090;
+    
+}
+nav {
+    margin-top: 7px;
+    flex: 100%;
+    border-right: 10px solid red;
+}
+
+ul#main-menu li a{
+    padding: 6px 20px;
+    display: block;
+    color: #eeeeee;
+}
+ul#main-menu li:first-child a{
+    padding-left: 15px;
+}
+ul#main-menu li a:hover{
+    color: #4db2ec;
+    text-decoration: none;
+}
+
+/* ================================ */
+
+#wp-featured-post{
+    margin-bottom: 20px;
+}
+.box .box-head h3{
+    display: inline-block;
+    color: #eee;
+    background: #23282d;
+    font-weight: 600;
+    text-transform:uppercase ;
+    padding: 1px 15px;
+    margin-bottom: 0px;
+
+}
+
+.box .box-body{
+    padding-top: 20px;
+}
+.box .featured-post .box-body{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada ;
+}
+
+.box .box-body li a img{
+    width: 360px;
+}
+
+ul.list-featured-post li{
+    flex: 360px 0 1;
+}
+ul.list-featured-post li .post-thumb{
+    display: block;
+    overflow: hidden;
+}
+ul.list-featured-post li .post-thumb:hover img{
+    transform: all 0.25s;
+}
+
+ul.list-featured-post li .post-thumb:hover img{
+    transform: scale(1.05);
+}
+
+ul.list-featured-post a.post-title {
+    color: #5f5f5f;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+    display: block;
+}
+
+.img-375{
+    width: 375px;
+}
+
+/* ========================WP CONTENT=============== */
+
+#content{
+    flex: 765px;
+    padding-right: 15px;
+}
+
+#sidebar{
+     flex: 375px;
+     padding-left: 15px;
+}
+.box .box-head .mau{
+    border-bottom: 2px solid #4db2ec;
+}
+.container .box-head .mau{
+    display: inline-block;
+    color: #eee;
+    background:#4db2ec;
+    font-weight: 600;
+    text-transform:uppercase ;
+    padding: 1px 15px; 
+}
+
+ul.list-post li{
+    display: flex;
+    margin-bottom: 30px;
+}
+ul.list-post li .post-thumb {
+    display: block;
+    padding-right: 15px;
+    flex: 280px;
+
+}
+ul.list-post li .more-info{
+    padding-left: 15px;
+
+}
+
+ul.list-post li .more-info .post-title{
+    color: #111111;
+    font-size: 21px;
+    font-weight: 600;
+}
+ul.list-post li:hover .more-info a.post-title{
+    color: #4db2ec;
+}
+ul.list-post li .more-info .post-published{
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 0px;
+}
+
+ul.list-post li .more-info .post-author{
+    color: #111111; 
+}
+ul.list-post li .more-info .post-date{
+    color: #aaa;
+}
+ul.list-post li .more-info .post-excerpt{
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 5px;
+}
+
+/* ===================Sidebar============== */
+ #sidebar h3{
+ background: red;
+} 
+
+.box.top-topic .box-head{
+    border-bottom: 2px solid #ff2d2d;
+    margin-top:30px ;
+    margin-left:15px ;
+}
+ul.list-topic li a{
+    color: #212121;
+    font-size: 16px;
+    display: block;
+    padding: 6px 0px;
+    margin-left: 15px;
+}
+ul.list-topic li a span.num-post {
+     position: absolute; /* Đẩy 2 số và chữ sang 2 bên */
+    right: 190px;
+}
+ul.list-topic li:hover a{
+    color: red;
+    text-decoration: none;
+}
+
+
+/* ====================FOOTER================ */
+#footer {
+    background: #23282d;
+   padding-top: 57px;
+    padding-bottom: 0px;
+    color: #f6f6f6;
+}
+
+#footer .box .box-head h3{
+    background: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 10px;
+}
+#footer .box.logo-footer {
+    flex: 280px;
+    padding-right: 15px;
+}
+#footer .box.about-us {
+    flex: 1280px;
+    padding-right: 15px;
+    padding-left: 150px;
+}
+#footer .box.follow-us {
+    flex: 280px;
+    padding-left: 205px;
+}
+
+ul.list-social li{
+    margin-left: 15px;
+   
+}
+ ul.list-social li a{
+    background: #434648;
+    padding: 6px 10px;
+    color: #eee;
+ }
+
+ ul.list-social li:first-child{
+    margin-left: 0px;
+ }
+ ul.list-social li:hover a{
+    color: #4db2ec;
+ }
+ ul.list-social li a{
+    background: #434648;
+    padding: 6px 10px;
+    color: #eee;
+    display: block;
+    border-radius: 50px;
+ }
+
+
+ /* ========================Footer copy================= */
+
+ #wp-copyright {
+    background: #222527;
+    color: #fff;
+    margin-top: 60px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+ }
+
+ #wp-copyright .copyright{
+    margin-bottom: 0;
+    font-size: 14px;
+ }
+ ul.footer-menu li a{
+    font-size: 14px;
+    color: #f3f3f3;
+    padding: 0px 13px;
+    display: block;
+
+    
+ }
+
+ ul.footer-menu li:hover a{
+    color: #4db2ec;
+    text-decoration: none;
+ }
+
+ ul.footer-menu li:last-child a{
+    padding-right: 0;
+ }
+ ul.footer-menu {
+    position: absolute;
+    right: 150px;
+    
+ }
+
+
+
+
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    /* Code */
+    }
+    /*Ipad dọc(768 x 1024)*/
+    @media screen and (max-width: 768px) {
+    /* Code */
+    }
+    /* Smart phone (480 x 640)*/
+    @media screen and (max-width: 480px) {
+    /* Code */
+    }
+    /* Smart phone nhỏ */
+    @media screen and (max-width: 320px) {
+    /* Code */
+    }
+     /* Smart phone nhỏ */
+ @media screen and (min-width: 320px) {
+    /* Code */
+    }
+    /* Smart phone nhỏ(480 x 640) */
+    @media screen and (min-width: 480px) {
+    /* Code */
+    }
+    /* Ipad dọc(768 x 1024) */
+    @media screen and (min-width: 768px) {
+    /* Code */
+    }
+    /* Ipad ngang(1024 x 768) */
+    @media screen and (min-width: 1024px) {
+    /* Code */
+    }
