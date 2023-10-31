@@ -305,35 +305,58 @@ ul.list-social li{
 
 
 
-  /*Ipad ngang(1024 x 768)*/
-  @media screen and (max-width: 1024px) {
-    /* Code */
+  /* Sử dụng media query để thay đổi kích thước font chữ */
+@media (max-width: 768px) {
+    body {
+      font-size: 16px;
     }
-    /*Ipad dọc(768 x 1024)*/
-    @media screen and (max-width: 768px) {
-    /* Code */
+  }
+  
+  /* Cho màn hình lớn hơn (máy tính) */
+  @media (min-width: 769px) {
+    body {
+      font-size: 18px;
     }
-    /* Smart phone (480 x 640)*/
-    @media screen and (max-width: 480px) {
-    /* Code */
+  }
+
+  /* Sử dụng media query để sắp xếp lại phần tử */
+@media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Ẩn thanh sidebar trên điện thoại */
     }
-    /* Smart phone nhỏ */
-    @media screen and (max-width: 320px) {
-    /* Code */
+  }
+  
+  /* Cho màn hình lớn hơn (máy tính) */
+  @media (min-width: 769px) {
+    .sidebar {
+      display: block; /* Hiển thị thanh sidebar trên máy tính */
     }
-     /* Smart phone nhỏ */
- @media screen and (min-width: 320px) {
-    /* Code */
+  }
+
+  /* Sử dụng media query để thay đổi kích thước hình ảnh */
+@media (max-width: 768px) {
+    img {
+      width: 100%; /* Hình ảnh chiếm toàn bộ chiều rộng trên điện thoại */
     }
-    /* Smart phone nhỏ(480 x 640) */
-    @media screen and (min-width: 480px) {
-    /* Code */
+  }
+  
+  /* Cho màn hình lớn hơn (máy tính) */
+  @media (min-width: 769px) {
+    img {
+      width: auto; /* Khôi phục kích thước ban đầu trên máy tính */
     }
-    /* Ipad dọc(768 x 1024) */
-    @media screen and (min-width: 768px) {
-    /* Code */
+  }
+
+  /* Sử dụng media query để ẩn/hiển thị nội dung bổ sung */
+@media (max-width: 768px) {
+    .extra-content {
+      display: none; /* Ẩn nội dung bổ sung trên điện thoại */
     }
-    /* Ipad ngang(1024 x 768) */
-    @media screen and (min-width: 1024px) {
-    /* Code */
+  }
+  
+  /* Cho màn hình lớn hơn (máy tính) */
+  @media (min-width: 769px) {
+    .extra-content {
+      display: block; /* Hiển thị nội dung bổ sung trên máy tính */
     }
+  }
